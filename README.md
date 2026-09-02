@@ -24,6 +24,16 @@ dsh plugin --profile web add github:mackenzietsai/dsh-model-3way
 
 Restart `dsh --profile web` after installing.
 
+## Acknowledgements
+
+This plugin adapts substantial portions of
+[dsh-model-provider](https://github.com/pc439527/dsh-model-provider) by
+pc439527 (MIT) — the slot registration wiring, pane architecture, interaction
+design, and adapted CSS rules. The minimal package layout was referenced from
+[dsh-model-search](https://github.com/a1073097082/dsh-model-search) by
+a1073097082 (MIT). Original license texts are reproduced in
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
 ## License
 
 MIT
