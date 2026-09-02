@@ -1,0 +1,11 @@
+# dsh-model-3way — bundle patch layer.
+#
+# Installing this package into a profile (`dsh plugin --profile <name> add <path>`)
+# appends it to `dsh.profile.bundles`; this patch is then applied as that
+# bundle's layer. The single row mounts BOTH halves: the host half (plain
+# Cordis plugin with an empty apply — pure browser-surface plugin) and the
+# browser half (`./client`), discovered from the `dsh.client` declaration in
+# package.json.
+- insert:
+    - id: model-3way
+      name: 'dsh-model-3way'

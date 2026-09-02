@@ -1,0 +1,34 @@
+{
+  "name": "dsh-model-3way",
+  "version": "1.0.0",
+  "description": "Three-entry model selector for the DeepSeek Harness composer seat: Provider / Model / Effort as sibling rows in the root menu, each showing its current value. Picking a provider prefers the same-named model (one-click price-tier switch); per-pane search; current marks.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackenzietsai/dsh-model-3way.git"
+  },
+  "homepage": "https://github.com/mackenzietsai/dsh-model-3way#readme",
+  "keywords": ["deepseek-harness", "dsh", "plugin", "model-selector", "provider", "client-ui"],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  }
+}
